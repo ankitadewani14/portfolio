@@ -65,14 +65,8 @@ const Projects = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        {/* Fallback styling if styles.sectionSubText or styles.sectionHeadText are not working */}
-        <p className={`${styles.sectionSubText || 'text-gray-500'} text-center`}>
-          What I have worked on
-        </p>
-        <h2 className={`${styles.sectionHeadText || 'text-3xl font-bold text-white'} text-center`}>
-          My Projects
-        </h2>
-      </motion.div>
+              <h2 className={styles.sectionHeadText}>My Projects</h2>
+            </motion.div>
 
       <div className="mt-20 flex flex-col">
         <VerticalTimeline>
